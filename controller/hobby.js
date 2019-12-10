@@ -36,7 +36,6 @@ function update(req , res){
     })
 }
 function deleteOne(req , res){
-    console.log('hi i i i i i i i i ')
     Hobby.findByIdAndDelete(req.params.id , function(err , hobby){
         res.redirect('/')
     })
